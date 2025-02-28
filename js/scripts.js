@@ -30,7 +30,7 @@
 
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, Math.abs(window.pageYOffset - $(heading).offset().top) / 5);
+        }, 100);// Math.abs(window.pageYOffset - $(heading).offset().top) / 10);
 
         // Hide the menu once clicked if mobile
         if ($('header').hasClass('active')) {
@@ -42,7 +42,7 @@
     $('#to-top').click(function() {
         $('html, body').animate({
             scrollTop: 0
-        }, 200);
+        }, 100);
     });
 
     // Scroll to first element
@@ -50,7 +50,7 @@
         var scrollDistance = $('#lead').next().offset().top;
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, 200);
+        }, 100);
     });
 
     // Create timeline
