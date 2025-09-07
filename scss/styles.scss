@@ -959,7 +959,9 @@ footer {
     }
 
     .project-image {
-        display: none;
+        display: block;
+        float: none;
+        width: 100%;
     }
 
     .project-info {
@@ -968,6 +970,12 @@ footer {
         padding: 30px 15px;
         top: auto;
         transform: none;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
     footer {
